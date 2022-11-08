@@ -1,0 +1,19 @@
+.logo {
+	height: 48px;
+	width: 48px;
+}
+
+
+
+.link {
+	text-decoration: none;
+	color: rgb(40, 40, 40);
+}
+.link:first-child {
+	text-decoration: none;
+	color: rgb(40, 40, 40);
+	border-bottom: 3px solid #ff2625;
+}
+.link:hover {
+	text-decoration: underline;
+}
