@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react';
 import {Box, Button, Stack, TextField, Typography} from '@mui/material'
 import classes from "./styles/SearchExercises.module.css"
 import {exerciseOptions, fetchData} from '../utils/fetchData.js'
+import HorizontalScrollbar from './HorizontalScrollbar.js'
 
-function SearchExercises() {
-
+function SearchExercises({
+	setExercises, bodyPart, setBodyPart
+}) {
 	const [search, setSearch] = useState('')
 	const [bodyParts, setBodyParts] = useState([])
-	const [exercises, setExercises] = ([])
 
 	useEffect(() => {
         const fetchExercisesData = async () => {
@@ -18,6 +19,7 @@ function SearchExercises() {
 			setBodyParts(['all', ...bodyPartsData]);
 		}
 
+		// console.log(bodyParts);
 		fetchExercisesData();
 
 	}, [])
@@ -62,6 +64,12 @@ function SearchExercises() {
 				>
 					Search
 				</Button>
+			</Box>
+			<Box className={classes.scrollbar}>
+				<HorizontalScrollbar 
+				data={bodyParts} 
+				bodyPart={bodyPart} 
+				setBodyPart={setBodyPart} />
 			</Box>
 		</Stack>
 	);

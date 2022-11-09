@@ -1,0 +1,38 @@
+.cardsContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.bodyPartCard {
+	width: 150px;
+	height: 160px;
+	cursor: pointer;
+	align-items: center;
+	justify-content: center;
+	transform: scale(1, 1);
+	transition: 0.3s all ease-in-out;
+	gap: 47px;
+}
+.bodyPartCard_selected {
+	border-top: 4px solid #ff2625;
+}
+.bodyPartCard:not(:last-child) {
+	margin-right: 20px;
+}
+
+.bodyPartCard:hover{
+	transform: scale(1.2, 1.2);
+}
+
+.bodyPartCardIcon {
+	width: 40px!important;
+	height: 40px!important;
+}
+
+.titleCard {
+	font-size: 20px;
+	font-weight: 500;
+}
