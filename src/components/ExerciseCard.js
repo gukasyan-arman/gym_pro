@@ -8,6 +8,17 @@ function ExerciseCard({exercise}) {
 	return ( 
 		<Link className={styles.exerciseCard} to={`/exercise/${exercise.id}`}>
 			<img src={exercise.gifUrl} alt={exercise.name}/>
+			<Stack direction='row'>
+				<Button className={[styles.btn, styles.firstBtn]}>
+					{exercise.bodyPart}
+				</Button>
+				<Button className={[styles.btn, styles.lastBtn]}>
+					{exercise.bodyPart}
+				</Button>
+			</Stack>
+			<Typography className={[styles.exerciseName]}>
+				{exercise.name}
+			</Typography>
 		</Link>
 	);
 }
