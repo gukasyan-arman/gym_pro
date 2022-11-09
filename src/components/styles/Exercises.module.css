@@ -1,0 +1,26 @@
+.container {
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.title {
+	font-size: 32px!important;
+	margin-bottom: 46px!important;
+}
+
+.exercisesList {
+    display: flex;
+    align-items: center;
+    flex-direction: row!important;
+	flex-wrap: wrap!important;
+    gap: 20px;
+}
+
+@media (max-width: 767px) {
+	.conteiner {
+		margin-top: 50px;
+	}
+	.exercisesList {
+		/* gap: 50px; */
+	}
+}
