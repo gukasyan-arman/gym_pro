@@ -58,8 +58,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 280px;
-		height: 311px;
+		width: 300px;
+		height: 333px;
 	}
 	.btn {
 		margin-left: 0px!important;
@@ -71,9 +71,10 @@
 		margin-left: 10px!important;
 	}
 	.exerciseCard img {
-		height: 210px;
+		height: 200px;
 	}
 	.exerciseName {
+		text-align: center;
 		font-size: 18px!important;
 		margin-left: 0px!important;
 	}
