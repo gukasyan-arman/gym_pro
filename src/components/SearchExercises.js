@@ -19,7 +19,6 @@ function SearchExercises({
 			setBodyParts(['all', ...bodyPartsData]);
 		}
 
-		// console.log(bodyParts);
 		fetchExercisesData();
 
 	}, [])

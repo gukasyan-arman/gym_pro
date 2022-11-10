@@ -26,6 +26,7 @@
 	border-radius: 20px!important;
 	text-transform: capitalize!important;
 }
+
 .lastBtn {
 	background-color: #ffa9a9!important;
 	margin-left: 21px!important;
@@ -33,6 +34,15 @@
 	font-size: 14px!important;
 	border-radius: 20px!important;
 	text-transform: capitalize!important;
+}
+
+.paginationBlock {
+	margin-top: 100px;
+	align-items: center;
+}
+
+.hideBlock {
+	display: none;
 }
 
 @media (max-width: 767px) {

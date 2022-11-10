@@ -1,9 +1,12 @@
 .exerciseCard {
+	justify-content: center;
 	width: 400px;
 	height: 445px;
 	background: #fff;
+	border: 2px solid #FF2625;
 	border-top: 4px solid #FF2625;
 	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
 	text-decoration: none;
 	display: flex;
 	justify-content: space-between;
@@ -48,4 +51,30 @@
 	margin-top: 10px!important;
 	padding-bottom: 10px!important;
 	text-transform: capitalize!important;
+}
+
+@media (max-width: 880px) {
+	.exerciseCard {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 280px;
+		height: 311px;
+	}
+	.btn {
+		margin-left: 0px!important;
+	}
+	.firstBtn{
+		margin-right: 10px!important;
+	}
+	.lastBtn {
+		margin-left: 10px!important;
+	}
+	.exerciseCard img {
+		height: 210px;
+	}
+	.exerciseName {
+		font-size: 18px!important;
+		margin-left: 0px!important;
+	}
 }
