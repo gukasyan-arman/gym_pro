@@ -45,7 +45,7 @@ function Exercises({exercises, bodyPart, setExercises}) {
 	return ( 
 		<div id='exercises' className={cx('container', {'hideBlock' : (exercises.length < 1)})}>
 			<Typography className={styles.title}>
-				Results:
+				Results
 			</Typography>
 			<Stack className={styles.exercisesList}>
 				{currentExercise.map((exercise, index) =>(
