@@ -1,0 +1,45 @@
+.container {
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.title {
+	font-size: 32px!important;
+	font-weight: 600!important;
+	margin-bottom: 20px!important;
+	text-transform: capitalize;
+}
+.title span{
+	color: #ff2526;
+}
+
+.videoBlock {
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row!important;
+    gap: 20px;
+}
+
+.exerciseVideo {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	width: 387px;
+	height: 381px;
+	text-decoration: none;
+}
+
+@media (max-width: 600px) {
+	.container {
+		margin-top: 20px;
+	}
+	.videoBlock {
+		flex-direction: column;
+		gap: 0px;
+	}
+	.exerciseVideo {
+		width: 320px;
+		height: 300px;
+	}
+}

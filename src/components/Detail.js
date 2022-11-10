@@ -32,7 +32,7 @@ function Detail({exerciseDetail}) {
 				</Typography>
 				<Typography className={styles.description}>
 				Exercises keep you strong. 
-				{name} is one of the best exercises to target your {target}. 
+				<span>{name}</span> is one of the best exercises to target your <span>{target}</span>. 
 				It will help you improve your mood and again energy.
 				</Typography>
 				{extraDetail.map((item) => (
