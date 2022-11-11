@@ -19,6 +19,14 @@ function ExerciseVideos({exerciseVideos, name}) {
 						rel='noreferrer'
 					>
 						<img src={item.video.thumbnails[0].url} alt={item.video.title} />
+						<Box>
+							<Typography variant='h5' sx={{ borderBottom: 2, borderColor: '#ff2526' }}>
+								{item.video.title}
+							</Typography>
+							<Typography variant='h6'>
+								{item.video.channelName}
+							</Typography>
+						</Box>
 					</a>
 				))}
 			</Stack>

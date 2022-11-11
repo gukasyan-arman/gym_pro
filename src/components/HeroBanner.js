@@ -14,7 +14,7 @@ function HeroBanner() {
 					Sweat, Smile <br /> And Repeat
 				</p>
 				<p className={classes.baseText}>
-					Check out tme most effective exercises
+					Check out the most effective exercises
 				</p>
 				<Button href="#exercises" variant='contained' className={classes.redBtn}>
 					Explore Exercises

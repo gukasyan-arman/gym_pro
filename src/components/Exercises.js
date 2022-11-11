@@ -56,10 +56,10 @@ function Exercises({exercises, bodyPart, setExercises}) {
 				<Pagination
 					color='secondary'
 					size='large'
-					defaultPage={1}
 					count={Math.ceil(exercises.length / exercisesPerPage)}
 					page={currentPage}
 					onChange={paginate}
+					defaultPage={1}
 				/>
 			</Stack>
 		</div>

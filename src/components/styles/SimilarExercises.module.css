@@ -1,0 +1,14 @@
+.container {
+	padding: 20px;
+}
+
+.title {
+	font-size: 32px!important;
+	font-weight: 600!important;
+	margin-bottom: 20px!important;
+	margin-left: 20px!important;
+	margin-top: 80px!important;
+}
+.title span{
+	color: #ff2526;
+}
